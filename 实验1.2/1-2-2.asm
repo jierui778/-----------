@@ -1,3 +1,4 @@
+;将十六位二进制数转换为ASCII码表示的十进制数
 SSTACK  SEGMENT STACK        ; 定义一个名为SSTACK的堆栈段
         DW 64 DUP(?)           ; 堆栈段初始化为64个未初始化的字节
 SSTACK  ENDS                ; 堆栈段定义结束
@@ -5,8 +6,7 @@ SSTACK  ENDS                ; 堆栈段定义结束
 CODE    SEGMENT
         ASSUME CS:CODE
 
-START:  MOV SI, 3500H           ; 将SI寄存器设置为3500H
-        MOV DX, [SI]            ; 将DX寄存器设置为[SI]的值
+START:  MOV DX,0ABCH
         MOV SI, 3515H           ; 将SI寄存器设置为3515H
 A1:     DEC SI                  ; 将SI寄存器减1
         MOV AX, DX              ; 将AX寄存器设置为DX的值
