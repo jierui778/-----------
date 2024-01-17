@@ -54,7 +54,7 @@ IRQ7:	MOV DX, A8254
 		MOV AX, 014DH
 		INT 10H					;ÏÔÊ¾×Ö·ûM
 		MOV AX, 0120H
-		INT 10H		
+		INT 10H
 		MOV AL, 20H
 		OUT 20H, AL				;ÖÐ¶Ï½áÊøÃüÁî
 		IRET
